@@ -9,8 +9,11 @@ import UIKit
 
 class NewsTableViewController: UITableViewController {
         
+    // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
     }
 
     // MARK: - Table view data source
@@ -21,6 +24,14 @@ class NewsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
+    }
+    
+    // MARK: - Private functions
+    
+    private func setup() {
+        self.title = "Good News"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.isHidden = false
     }
     
 }
