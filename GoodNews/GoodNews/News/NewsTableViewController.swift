@@ -13,6 +13,13 @@ class NewsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=c4cddd4880ea4b5aa81f512e040bbfda")!
+        Webservice().getArticles(url: url) { _ in
+            
+        }
+        
+        
         setup()
     }
 
