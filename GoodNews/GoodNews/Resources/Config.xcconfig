@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  GoodNews
+//
+//  Created by Rodrigo Oliveira on 4/24/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+API_KEY = c4cddd4880ea4b5aa81f512e040bbfda
