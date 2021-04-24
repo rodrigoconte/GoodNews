@@ -7,11 +7,11 @@
 
 import Foundation
 
-enum NewsAPI {
+enum ArticlesAPI {
     case getNews
 }
 
-extension NewsAPI: RESTRequest {
+extension ArticlesAPI: RESTRequest {
     
     var baseURL: String {
         return "https://newsapi.org"
@@ -25,7 +25,7 @@ extension NewsAPI: RESTRequest {
     }
     
     var queryItems: [URLQueryItem]? {
-        let country = "us"
+        let country = "br"
         let countryQueryItem = URLQueryItem(name: "country", value: country)
         
         let apiKey = "c4cddd4880ea4b5aa81f512e040bbfda"

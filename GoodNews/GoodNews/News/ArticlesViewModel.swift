@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct NewsViewModel {
+struct ArticleViewModel {
     private let article: Article
 }
 
-extension NewsViewModel {
+extension ArticleViewModel {
     
     init(_ article: Article) {
         self.article = article
@@ -19,7 +19,7 @@ extension NewsViewModel {
     
 }
 
-extension NewsViewModel {
+extension ArticleViewModel {
     
     var title: String {
         return self.article.title
@@ -46,9 +46,9 @@ extension ArticlesListViewModel {
         return self.articles.count
     }
     
-    func articleAtIndex(_ index: Int) -> NewsViewModel {
+    func articleAtIndex(_ index: Int) -> ArticleViewModel {
         let article = self.articles[index]
-        return NewsViewModel(article)
+        return ArticleViewModel(article)
     }
     
 }

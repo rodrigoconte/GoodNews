@@ -7,10 +7,10 @@
 
 import Foundation
 
-class NewsNetworkManager: NewsWorkerManager {
+class ArticlesNetworkManager: ArticlesWorkerManager {
     
     func getNews(completion: @escaping (Result<News, Error>) -> Void) {
-        let rest = RESTService<NewsAPI>()
+        let rest = RESTService<ArticlesAPI>()
         
         rest.request(.getNews) { (result) in
             DispatchQueue.main.async {
