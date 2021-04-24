@@ -28,7 +28,7 @@ extension ArticlesAPI: RESTRequest {
         let country = "br"
         let countryQueryItem = URLQueryItem(name: "country", value: country)
         
-        let apiKey = "c4cddd4880ea4b5aa81f512e040bbfda"
+        let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String
         let apiKeyQueryItem = URLQueryItem(name: "apiKey", value: apiKey)
         
         return [countryQueryItem, apiKeyQueryItem]
